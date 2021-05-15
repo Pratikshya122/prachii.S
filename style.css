@@ -14,6 +14,12 @@ body{
     color:white;
     font-family:garamond, sans-serif;
 }
+section.dark .square{
+    background: rgb(255, 255, 255,0.7);
+}
+section.dark .square{
+    color:rgba(0, 0, 0, 0.8);
+}
 .square img{
     border-radius: 50%;
     width: 200px;
@@ -39,3 +45,25 @@ body{
     content:"\27BE" ;
 }
 
+.toggle{
+    position:absolute;
+    top:30px;
+    right:30px;
+    background:rgba(248, 244, 244);
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.toggle:before{
+    content:'\f185';
+    font-family: fontAwesome;
+    color:rgb(7, 7, 7);
+}
+section.dark .toggle:before
+{   
+    content: '\f186';
+}

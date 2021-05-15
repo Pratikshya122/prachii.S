@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Pratikshya WebPage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" />">
 </head>
 <body>
+    <section class="sec">
+    <div class="toggle"></div>
     <div class="square">
         <img src="Sprachi.jpg" alt="" class="square-img"heignt="200" width="200">
         <h1>Pratikshya Behera</h1>
@@ -34,5 +37,15 @@
 
     </p>
     </div>
+</section>
+<script>
+    const sec= document.querySelector('.sec');
+    const toggle= document.querySelector('.toggle');
+    toggle.onclick= function(){
+        sec.classList.toggle('dark')
+    }
+
+</script>
+    
 </body>
 </html>
